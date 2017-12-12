@@ -1,29 +1,33 @@
-# Simple Blog
-![Simple Roll](https://cosmicjs.com/uploads/6465cab0-246c-11e7-995a-2b3b96eb2f07-Screen%20Shot%202017-04-18%20at%202.22.26%20PM.png)
-### [View Demo](https://cosmicjs.com/apps/simple-blog/demo)
-### Getting Started
+# A simple blog constructed with Node.js
+### Running instructions
+Installation:
 ```
-git clone https://github.com/cosmicjs/simple-blog
-cd simple-blog
-yarn
+git clone https://github.com/vunamkhanh/sample-nodejs-project.git
+cd khanh-blog
+npm install
 ```
-#### Run in development
+Getting started:
 ```
-yarn run development
+nodemon app.js
+Go to [http://localhost:3000](http://localhost:3000) on Chrome.
 ```
-#### Run in production
-```
-COSMIC_BUCKET=your-bucket-slug yarn start
-```
-Open [http://localhost:3000](http://localhost:3000).
 
-### Node.js + Cosmic JS
-You can easily manage the content in your Simple Blog website on Cosmic JS.  Follow these steps:
+#### Reference materials
+Node.js and ExpressJS for server deployment, Cosmic JS for contents management system.
 
-1. [Log in to Cosmic JS](https://cosmicjs.com).
-2. Create a Bucket.
-3. Go to Your Bucket > Apps.
-4. Install the [Simple Blog Website](https://cosmicjs.com/apps/simple-blog).
-5. Deploy your Blog Roll to the Cosmic App Server at Your Bucket > Web Hosting.
+- Javascript Tutorial [https://javascript.info/](https://javascript.info/).
+- Express Tutorial [https://www.tutorialspoint.com/expressjs/index.htm](https://www.tutorialspoint.com/expressjs/index.htm).
+- Cosmic JS [https://cosmicjs.com/getting-started](https://cosmicjs.com/getting-started).
+- How to build a blog [https://hackernoon.com/how-to-build-a-simple-blog-using-node-js-4ccdce39e78f](https://hackernoon.com/how-to-build-a-simple-blog-using-node-js-4ccdce39e78f).
+- Original template Github [https://github.com/cosmicjs/simple-blog](https://github.com/cosmicjs/simple-blog).
+- Blog content copied from [Wikipedia](https://en.wikipedia.org/wiki/Main_Page). Images from [Pexels](https://www.pexels.com/).
 
-Cosmic JS makes a great [Node.js CMS](https://cosmicjs.com/knowledge-base/nodejs-cms) for your Node.js apps.
+#### Changes from the original template
+1. Added the [**nodemon**](https://www.npmjs.com/package/nodemon) module for development testing; added the [**uncaught**](https://www.npmjs.com/package/uncaught) module for error interface; added the [**serve-favicon**](https://www.npmjs.com/package/serve-favicon) module for favicon requests from the browser.
+2. Added clickable tags for each blog post and the functionality to sort posts by tags.
+3. Removed **yarn.lock** since it causes compatibility problems between modules.
+4. Fix an issue where the page would not stop loading if a post's url does not exist. An empty page warning is given instead.
+5. Created a separate bucket on Cosmic JS for contents mangement, instead of having to install the app on the website.
+6. Minor changes on page layout, title positioning, colour scheme etc for clarity.
+7. Removed some unncessary html lines that can cause conflicts.
+8. Added blank favicon.ico in /public/images/. Can be replaced with a real file for production.

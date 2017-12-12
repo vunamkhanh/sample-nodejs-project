@@ -2,8 +2,6 @@
 <html lang="en">
 <head>
   <title>
-    {{# current_post }}{{ current_post.title }}{{/ current_post }}
-    {{^ current_post }}{{ cosmic.object.header.metadata.site_title }}{{/ current_post }}
   </title>
   <link rel="stylesheet" type="text/css" href="/style.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -14,11 +12,12 @@
 <body>
   <header class="header">
     <h1 class="site-title">
-      <a href="/">{{ cosmic.object.header.metadata.site_title }}</a>
-      <small class="site-title__tag">{{ cosmic.object.header.metadata.site_tag }}</small>
+      <a href="/">< Back to front page</a>
     </h1>
-    <div>
-      {{^ cosmic.objects.type.posts }}
-      {{/ cosmic.objects.type.posts }}
-    </div>
   </header>
+  
+  <main class="main">
+    <div class="container">
+      <h1>Page not found</h1>
+    </div>
+  </main>

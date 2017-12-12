@@ -1,4 +1,23 @@
-{{> header }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>
+    {{# current_post }}{{ current_post.title }}{{/ current_post }}
+    {{^ current_post }}{{ cosmic.object.header.metadata.site_title }}{{/ current_post }}
+  </title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body>
+  <header class="header">
+    <h1 class="site-title">
+      <a href="/">< Back to front page</a>
+    </h1>
+  </header>
+  
   <main class="main">
     {{^ current_post }}
       <div class="container">
@@ -22,9 +41,9 @@
         </div>
         <div class="blog__content droid">{{{ content }}}</div>
         <div class="blog__tags">
-          {{# metadata.categories }}
-            <span class="tag-pill" href="">{{ title }}</span>
-          {{/ metadata.categories }}
+          {{# metadata.category }}
+            <span class="tag-pill"> <a href="/category/{{ title }}">{{ title }}</a></span>
+          {{/ metadata.category }}
         </div>
       </div>  
     {{/ current_post }}

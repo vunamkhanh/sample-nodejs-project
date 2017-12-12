@@ -1,6 +1,6 @@
 /* Global */
 body {
-  background: #fafafa;
+  background: #f4f4f4;
   margin: 0;
   font-family: 'Lato', sans-serif;
   color: rgba(0,0,0,.8);
@@ -9,7 +9,7 @@ h1, h2 {
   margin: 0;
 }
 a {
-  color: #00ab6b;
+  color: #e37222;
   text-decoration: none;
 }
 /* helpers */
@@ -24,12 +24,12 @@ a {
 }
 /* Components */
 .container {
-  max-width: 740px;
+  max-width: 840px;
   margin: 0 auto;
   padding: 0 15px;
 }
 .header {
-  padding: 20px 20px 0 20px;
+  padding: 40px 40px 0 140px;
   margin-bottom: 30px;
 }
 .footer {
@@ -44,7 +44,7 @@ a {
   margin-bottom: 20px;
 }
 .site-title a {
-  color: rgba(0,0,0,.8);
+  color: rgba(0,0,0,0.8);
 }
 .site-title__tag {
   float: right;
