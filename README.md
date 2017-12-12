@@ -13,7 +13,7 @@ npm install
 Getting started:
 ```
 nodemon app.js
-Go to [http://localhost:3000](http://localhost:3000) on Chrome.
+Go to http://localhost:3000 on Chrome.
 ```
 
 #### Reference materials
