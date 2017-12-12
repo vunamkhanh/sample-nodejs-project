@@ -30,4 +30,4 @@ Node.js and ExpressJS for server deployment, Cosmic JS for contents management s
 5. Created a separate bucket on Cosmic JS for contents mangement, instead of having to install the app on the website.
 6. Minor changes on page layout, title positioning, colour scheme etc for clarity.
 7. Removed some unncessary html lines that can cause conflicts.
-8. Added blank favicon.ico in /public/images/. Can be replaced with a real file for production.
+8. Added blank favicon.ico in /public/images/, since broweser requests can cause errors. Can be replaced with a real file for production.
