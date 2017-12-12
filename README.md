@@ -16,7 +16,7 @@ nodemon app.js
 Go to http://localhost:3000 on Chrome.
 ```
 
-#### Reference materials
+### Reference materials
 Node.js and ExpressJS for server deployment, Cosmic JS for contents management system.
 
 - Javascript Tutorial [https://javascript.info/](https://javascript.info/).
@@ -25,7 +25,7 @@ Node.js and ExpressJS for server deployment, Cosmic JS for contents management s
 - How to build a blog [https://hackernoon.com/how-to-build-a-simple-blog-using-node-js-4ccdce39e78f](https://hackernoon.com/how-to-build-a-simple-blog-using-node-js-4ccdce39e78f).
 - Original template Github - Blog content copied from [Wikipedia](https://en.wikipedia.org/wiki/Main_Page); images from [Pexels](https://www.pexels.com/).
 
-#### Changes from the original template
+### Changes from the original template
 1. Added the [**nodemon**](https://www.npmjs.com/package/nodemon) module for development testing; added the [**uncaught**](https://www.npmjs.com/package/uncaught) module for error interface; added the [**serve-favicon**](https://www.npmjs.com/package/serve-favicon) module for favicon requests from the browser.
 2. Added clickable tags for each blog post and the functionality to sort posts by tags.
 3. Removed **yarn.lock** since it causes compatibility problems between modules.
