@@ -1,4 +1,8 @@
 # A simple blog constructed with Node.js
+### Credit
+Original Template
+[https://github.com/cosmicjs/simple-blog](https://github.com/cosmicjs/simple-blog).
+
 ### Running instructions
 Installation:
 ```
@@ -19,8 +23,7 @@ Node.js and ExpressJS for server deployment, Cosmic JS for contents management s
 - Express Tutorial [https://www.tutorialspoint.com/expressjs/index.htm](https://www.tutorialspoint.com/expressjs/index.htm).
 - Cosmic JS [https://cosmicjs.com/getting-started](https://cosmicjs.com/getting-started).
 - How to build a blog [https://hackernoon.com/how-to-build-a-simple-blog-using-node-js-4ccdce39e78f](https://hackernoon.com/how-to-build-a-simple-blog-using-node-js-4ccdce39e78f).
-- Original template Github [https://github.com/cosmicjs/simple-blog](https://github.com/cosmicjs/simple-blog).
-- Blog content copied from [Wikipedia](https://en.wikipedia.org/wiki/Main_Page). Images from [Pexels](https://www.pexels.com/).
+- Original template Github - Blog content copied from [Wikipedia](https://en.wikipedia.org/wiki/Main_Page); images from [Pexels](https://www.pexels.com/).
 
 #### Changes from the original template
 1. Added the [**nodemon**](https://www.npmjs.com/package/nodemon) module for development testing; added the [**uncaught**](https://www.npmjs.com/package/uncaught) module for error interface; added the [**serve-favicon**](https://www.npmjs.com/package/serve-favicon) module for favicon requests from the browser.
